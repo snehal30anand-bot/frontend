@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Map</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <style>
+    #map {
+      height: 400px;
+      margin-top: 15px;
+    }
+
+    input {
+      margin: 5px;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Select Location</h2>
+
+  <!-- OPTIONS -->
+   
+  <button onclick="showMap()">Map</button>
+<li><a href="C:\Users\shreya\major project\Frontend\worldmap.html" ><map name="Interactive"></map></a></li>
+  <button onclick="showLatLng()">Latitude & Longitude</button>
+
+  <!-- MAP -->
+   <!-- SEARCH + DATE -->
+<div class="controls">
+  <input
+    type="text"
+    id="searchBox"
+    placeholder="Search location (e.g. Mumbai)"
+  >
+
+  <input
+    type="date"
+    id="dateSelect"
+  >
+
+  <button onclick="searchLocation()">Search</button>
+</div>
+  <div id="mapBox" style="display:none;">
+    <div id="map"></div>
+    <p>
+      Latitude: <span id="lat">---</span><br>
+      Longitude: <span id="lng">---</span>
+    </p>
+  </div>
+
+  <!-- MANUAL INPUT -->
+  <div id="latlngBox" style="display:none;">
+    <input type="text" placeholder="Latitude">
+    <input type="text" placeholder="Longitude">
+    <input type="text" placeholder="Date">
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Your JS -->
+  <script src="map.js"></script>
+
+</body>
+</html>

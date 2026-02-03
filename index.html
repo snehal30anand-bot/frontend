@@ -1,0 +1,61 @@
+<script>
+    if (!localStorage.getItem("loggedInUser")) {
+        window.location.href = "auth.html";
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Image Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="nav-logo">
+                <img src="erth.png" alt="Project Logo" class="logo-img">
+                <span>Satellite.IO</span>
+            </a>
+        </div>
+        <ul class="nav-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="Refrence.html">Reference</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="Register.html">Register</a></li>
+        
+            <li><a href="login.html" class="nav-button-primary">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-overlay">
+        <h1>Satellite Image Processing</h1>
+        <p>Upload your satellite imagery for analysis.</p>
+        <label for="image-upload" class="upload-button">
+            Add Image
+        </label>
+    <input type="file" id="image-upload" hidden>
+        <p>OR.</p>
+    
+        </label>
+        <li><a href="noimage.html" class="nav-button-primary">Don't have Image</a></li>
+        </main>
+
+
+    <div id="about-modal" class="modal-overlay"> ... </div>
+    <div id="contact-modal" class="modal-overlay"> ... </div>
+    <div id="help-modal" class="modal-overlay"> ... </div>
+
+
+    </body>
+</html> 
+<head>
+<!-- Map library -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">

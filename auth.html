@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-box">
+        <h2 id="formTitle">Login</h2>
+
+        <!-- Name (only for Register) -->
+        <input type="text" id="name" placeholder="Name" style="display:black;">
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="submitForm()">Submit</button>
+
+        <p id="toggleText">
+            Don't have an account?
+            <span onclick="toggleForm()">Register</span>
+        </p>
+    </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="nav-logo">
+                <img src="erth.png" alt="Project Logo" class="logo-img">
+                <span>Satellite.IO</span>
+            </a>
+        </div>
+        <ul class="nav-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="Refrence.html">Reference</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+           
+        
+        </ul>
+    </nav>
+
+    
+
+    <div id="login-modal" class="modal-overlay"> ... </div>
+    <div id="about-modal" class="modal-overlay"> ... </div>
+    <div id="contact-modal" class="modal-overlay"> ... </div>
+    <div id="help-modal" class="modal-overlay"> ... </div>
+
+
+    </body>
